@@ -12,7 +12,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logika pengiriman form bisa disesuaikan, misalnya menggunakan emailjs atau API backend Anda.
+ 
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Message:', message);
