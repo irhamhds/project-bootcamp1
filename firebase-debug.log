@@ -1,0 +1,46 @@
+[debug] [2024-06-17T18:40:16.816Z] ----------------------------------------------------------------------
+[debug] [2024-06-17T18:40:16.818Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\irhds\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-17T18:40:16.819Z] CLI Version:   13.11.2
+[debug] [2024-06-17T18:40:16.819Z] Platform:      win32
+[debug] [2024-06-17T18:40:16.819Z] Node Version:  v18.16.0
+[debug] [2024-06-17T18:40:16.834Z] Time:          Tue Jun 18 2024 01:40:16 GMT+0700 (Western Indonesia Time)
+[debug] [2024-06-17T18:40:16.835Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-17T18:40:16.842Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-17T18:40:16.842Z] > authorizing via signed-in user (irhamhadisuma2@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\PROJECT-KELAS-WORK\project-bootcamp1
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-06-17T18:40:53.781Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-06-17T18:40:53.782Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"project-class-work-2345","name":"project-class-work-2345"}
+[debug] [2024-06-17T18:40:55.612Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-06-17T18:40:55.612Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5576551470743072144"}
+[debug] [2024-06-17T18:40:55.613Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5576551470743072144 [none]
+[debug] [2024-06-17T18:40:56.939Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5576551470743072144 200
+[debug] [2024-06-17T18:40:56.940Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5576551470743072144 {"name":"operations/cp.5576551470743072144","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2024-06-17T18:40:57.019Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\irhds\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (C:\Users\irhds\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:186:29)
+    at async createFirebaseProjectAndLog (C:\Users\irhds\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
+    at async promptAndCreateNewProject (C:\Users\irhds\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\irhds\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+    at async init (C:\Users\irhds\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:39:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
