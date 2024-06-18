@@ -12,7 +12,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+<<<<<<< HEAD
   
+=======
+ 
+>>>>>>> 611b0dbf89881fb92321dd4b9d3c5f14ab332e2e
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Message:', message);
