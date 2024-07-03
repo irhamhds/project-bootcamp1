@@ -24,7 +24,7 @@ export default function Products() {
             <Row>
                 {
                     data.map((item,i) => (
-                        <Col key={i} xs ="6" md="4" lg="3">
+                        <Col key={i} xs ="6" md="4" lg="3" style={{ padding: '20px' }}>
                             <CardProducts item= {item} />
                         </Col>
                     ))

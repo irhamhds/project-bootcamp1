@@ -15,7 +15,8 @@ export default function Home() {
         <section className="py-5 mt-5">
         <div className="container text-center">
           <h1 className='p-5'>Welcome to Mens Fashion</h1>
-          <img src={fashion2} alt="Fashion 2" className='img-fluid rounded-3' />
+          <img src={fashion2} alt="Fashion 2" className='img-fluid rounded-3 custom-border ' 
+        />
           <p>Your guide to a healthier and happier life.</p>
         </div>
       </section>
